@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
-
+//import { Pai } from "./components/atividade01/questao01/Pai";
+import * as meuPc from "./components/atividade01/questao02/MeuPc.jsx";
 function App() {
-  return (
+  /*  
+RETORNO DA QUESTAO 1
+return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Pai />
+    </div>
+  );*/
+  return (
+    <div>
+      <meuPc.memoriaRam precoMemoriaRam={15} nomeMemoriaRam="Ryzen" />
+      <meuPc.placaDeVideo precoPlacadeVideo={20} nomePlacaDeVideo="Nvidia" />
+      <meuPc.placaMae precoPlacaMae={30} nomePlacaMae="Asus" />
     </div>
   );
 }
