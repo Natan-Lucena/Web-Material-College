@@ -1,0 +1,15 @@
+#intro {
+  color: black;
+  text-align: center;
+  background-color: purple;
+  font: Arial, Helvetica, sans-serif;
+}
+
+section {
+  flex-direction: column;
+  display: flex;
+  color: black;
+  text-align: center;
+  background-color: lightblue;
+  font: Arial, Helvetica, sans-serif;
+}

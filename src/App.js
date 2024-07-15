@@ -4,7 +4,8 @@
 //import World from "./components/atividade01/questao03/World.jsx";
 //import FunctionContextA from "./components/atividade02/questao01/FunctionContextA.jsx";
 
-import PokemonComponent from "./components/atividade02/questao03/PokemonComponent";
+//import PokemonComponent from "./components/atividade02/questao03/PokemonComponent";
+import { SaveLoadData } from "./components/saveLoadData/SaveLoadData";
 
 //import PokemonAvo from "./components/atividade02/questao02/PokemonAvo.jsx";
 function App() {
@@ -44,7 +45,8 @@ return (
   //QUESTAO 2
   // return <PokemonAvo />;
 
-  return <PokemonComponent />;
+  //return <PokemonComponent />;
+  return <SaveLoadData />;
 }
 
 export default App;
