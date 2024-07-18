@@ -43,9 +43,11 @@ p {
 }
 
 button {
-  margin: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
   height: 40px;
-  width: 150px;
+  width: 159px;
 }
 article:nth-of-type(3) {
   flex: 20;
@@ -54,5 +56,10 @@ article:nth-of-type(3) {
 button:nth-of-type(5) {
   align-items: flex-end;
   margin-top: 5px;
-  width: calc(100% - 20px); /* 100% menos a margem esquerda e direita */
+  width: calc(100%);
+}
+#text {
+  padding-top: 27px;
+  margin-top: 5px;
+  justify-content: center;
 }
