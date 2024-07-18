@@ -1,15 +1,58 @@
-#intro {
-  color: black;
-  text-align: center;
-  background-color: purple;
-  font: Arial, Helvetica, sans-serif;
+section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-section {
-  flex-direction: column;
-  display: flex;
-  color: black;
+header {
+  background-color: blueviolet;
   text-align: center;
-  background-color: lightblue;
-  font: Arial, Helvetica, sans-serif;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+article {
+  background-color: aqua;
+  padding: 10px;
+  margin: 10px;
+  flex: 10;
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#niceId {
+  flex: 20;
+  height: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+button {
+  margin: 5px;
+  height: 40px;
+  width: 150px;
+}
+article:nth-of-type(3) {
+  flex: 20;
+  height: 332px;
+}
+button:nth-of-type(5) {
+  align-items: flex-end;
+  margin-top: 5px;
+  width: calc(100% - 20px); /* 100% menos a margem esquerda e direita */
 }
