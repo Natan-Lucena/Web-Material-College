@@ -12,7 +12,7 @@ export const SaveLoadData = () => {
     localStorage.setItem("Aluno", JSON.stringify(Aluno));
     alert("Salvo com sucesso");
   }
-  function loadData() {
+  async function loadData() {
     const inMemoryAluno = localStorage.getItem("Aluno");
     setAlunoStorage(JSON.parse(inMemoryAluno));
   }
