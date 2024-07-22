@@ -5,7 +5,8 @@
 //import FunctionContextA from "./components/atividade02/questao01/FunctionContextA.jsx";
 
 //import PokemonComponent from "./components/atividade02/questao03/PokemonComponent";
-import { SaveLoadData } from "./components/saveLoadData/SaveLoadData";
+import NavBar from "./components/BootStrap/NavBar";
+//import { SaveLoadData } from "./components/saveLoadData/SaveLoadData";
 
 //import PokemonAvo from "./components/atividade02/questao02/PokemonAvo.jsx";
 function App() {
@@ -46,7 +47,8 @@ return (
   // return <PokemonAvo />;
 
   //return <PokemonComponent />;
-  return <SaveLoadData />;
+  //return <SaveLoadData />;
+  return <NavBar />;
 }
 
 export default App;
