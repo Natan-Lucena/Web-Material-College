@@ -1,14 +1,20 @@
 import professores from "../data/db_professor";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
+import "./../css/crud.css";
 
 const Read = () => {
   const listProfessores = professores.map((professor) => (
     <tr>
       <td>{professor.id}</td>
       <td>{professor.nome}</td>
+      <td>{professor.idade}</td>
       <td>{professor.curso}</td>
       <td>{professor.titulacao}</td>
+      <div>
+        <button className="btn btn-secondary">Editar</button>
+        <button className="btn btn-danger">Excluir</button>
+      </div>
     </tr>
   ));
   return (
@@ -20,6 +26,7 @@ const Read = () => {
             <tr>
               <th scope="col">ID</th>
               <th scope="col">Nome</th>
+              <th scope="col">Idade</th>
               <th scope="col">Curso</th>
               <th scope="col">Titulação</th>
             </tr>
