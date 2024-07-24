@@ -1,5 +1,34 @@
+import professores from "../data/db_professor";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min";
+
 const Read = () => {
-  return <h1>Read professor</h1>;
+  const listProfessores = professores.map((professor) => (
+    <tr>
+      <td>{professor.id}</td>
+      <td>{professor.nome}</td>
+      <td>{professor.curso}</td>
+      <td>{professor.titulacao}</td>
+    </tr>
+  ));
+  return (
+    <>
+      <h1>Lista de professores</h1>
+      <div>
+        <table className="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">ID</th>
+              <th scope="col">Nome</th>
+              <th scope="col">Curso</th>
+              <th scope="col">Titulação</th>
+            </tr>
+          </thead>
+          <tbody>{listProfessores}</tbody>
+        </table>
+      </div>
+    </>
+  );
 };
 
 export default Read;
