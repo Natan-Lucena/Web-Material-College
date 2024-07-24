@@ -4,8 +4,12 @@
 //import World from "./components/atividade01/questao03/World.jsx";
 //import FunctionContextA from "./components/atividade02/questao01/FunctionContextA.jsx";
 
+import Main from "./components/Crud/Main";
+
+//import Main from "./components/Crud/Main";
+
 //import PokemonComponent from "./components/atividade02/questao03/PokemonComponent";
-import NavBar from "./components/BootStrap/NavBar";
+//import NavBar from "./components/BootStrap/NavBar";
 //import { SaveLoadData } from "./components/saveLoadData/SaveLoadData";
 
 //import PokemonAvo from "./components/atividade02/questao02/PokemonAvo.jsx";
@@ -48,7 +52,9 @@ return (
 
   //return <PokemonComponent />;
   //return <SaveLoadData />;
-  return <NavBar />;
+  // return <NavBar />;
+
+  return <Main />;
 }
 
 export default App;
