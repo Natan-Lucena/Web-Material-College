@@ -5,6 +5,8 @@ import Read from "./professor/Read";
 import Create from "./professor/Create";
 import Update from "./professor/Update";
 import Delete from "./professor/Delete";
+import CreateAluno from "./aluno/Create";
+import ReadAlunos from "./aluno/Read";
 
 const router = createBrowserRouter([
   {
@@ -15,6 +17,8 @@ const router = createBrowserRouter([
       { path: "professor/create", element: <Create /> },
       { path: "professor/update", element: <Update /> },
       { path: "professor/delete", element: <Delete /> },
+      { path: "aluno/create", element: <CreateAluno /> },
+      { path: "aluno/read", element: <ReadAlunos /> },
     ],
   },
 ]);

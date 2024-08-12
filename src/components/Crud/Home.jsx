@@ -28,7 +28,7 @@ const Home = () => {
                   aria-expanded="false"
                   href="/"
                 >
-                  Dropdown
+                  Professor
                 </a>
                 <ul className="dropdown-menu">
                   <li className="dropdown-item">
@@ -39,6 +39,29 @@ const Home = () => {
                   <li className="dropdown-item">
                     <Link className="dropdown-item" to="professor/create">
                       Criar professor
+                    </Link>
+                  </li>
+                </ul>
+              </li>
+              <li className="nav-item dropdown">
+                <a
+                  className="nav-link dropdown-toggle"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  href="/"
+                >
+                  Aluno
+                </a>
+                <ul className="dropdown-menu">
+                  <li className="dropdown-item">
+                    <Link className="dropdown-item" to="aluno/create">
+                      Criar aluno
+                    </Link>
+                  </li>
+                  <li className="dropdown-item">
+                    <Link className="dropdown-item" to="aluno/read">
+                      Ler Alunos
                     </Link>
                   </li>
                 </ul>

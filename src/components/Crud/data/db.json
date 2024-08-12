@@ -1,0 +1,28 @@
+{
+  "professores": [
+    {
+      "id": 1,
+      "nome": "Wladmir Tavares",
+      "idade": 40,
+      "curso": "CC",
+      "titulacao": "DOUTORADO"
+    },
+    {
+      "id": 2,
+
+      "nome": "Diana Braga",
+      "idade": 40,
+      "curso": "ES",
+      "titulacao": "MESTRADO"
+    },
+    {
+      "id": 3,
+
+      "nome": "Paulo de Tarso",
+      "idade": 23,
+      "curso": "ES",
+      "titulacao": "Sim"
+    }
+  ],
+  "alunos": [{ "id": 1, "nome": "João", "curso": "CC", "IRA": 8.5 }]
+}

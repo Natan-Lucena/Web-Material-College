@@ -1,9 +1,17 @@
-import professores from "../data/db_professor";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import "./../css/crud.css";
+import axios from "axios";
+import { useEffect, useState } from "react";
 
 const Read = () => {
+  const [professores, setProfessores] = useState([]);
+
+  useEffect(() => {
+    axios.get("http://localhost:3001/professores").then((response) => {
+      setProfessores(response.data);
+    });
+  }, []);
   const listProfessores = professores.map((professor) => (
     <tr>
       <td>{professor.id}</td>
