@@ -1,9 +1,18 @@
-import alunos from "../data/db_aluno";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import "./../css/crud.css";
+import { useEffect, useState } from "react";
+import axios from "axios";
 
 const ReadAlunos = () => {
+  const [alunos, setAlunos] = useState([]);
+
+  useEffect(() => {
+    axios.get("http://localhost:3001/alunos").then((response) => {
+      setAlunos(response.data);
+    });
+  }, []);
+
   const listAlunos = alunos.map((alunos) => (
     <tr>
       <td>{alunos.id}</td>

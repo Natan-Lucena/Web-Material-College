@@ -1,4 +1,5 @@
 import { useState } from "react";
+import axios from "axios";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import "./../css/crud.css";
@@ -8,6 +9,9 @@ const CreateAluno = () => {
   const [curso, setCurso] = useState("");
   const [IRA, setIRA] = useState("");
 
+  const HandleCreateButton = async () => {
+    await axios.post("http://localhost:3001/alunos", { nome, curso, IRA });
+  };
   const submitForm = (event) => {
     console.log("Nome: ", nome, "Curso: ", curso, "IRA: ", IRA);
   };
@@ -55,7 +59,11 @@ const CreateAluno = () => {
           ></input>
         </div>
         <div className="buttonSubmit">
-          <button className="btn btn-primary" type="submit">
+          <button
+            onClick={HandleCreateButton}
+            className="btn btn-primary"
+            type="submit"
+          >
             Criar
           </button>
         </div>
